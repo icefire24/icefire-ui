@@ -1,0 +1,22 @@
+{
+  "name": "icefireui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm -C play dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@icefireui/components": "workspace:^1.0.0",
+    "@icefireui/theme-chalk": "workspace:^1.0.0",
+    "@icefireui/utils": "workspace:^1.0.0",
+    "sass": "^1.57.1",
+    "typescript": "^4.9.4",
+    "vue": "^3.2.45"
+  }
+}
