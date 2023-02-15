@@ -1,17 +1,14 @@
-import Icon from './icon.vue'
+import icon from './icon.vue'
 import type {App,Plugin} from 'vue'
-// type SFCWithInstall<T> = T & Plugin
-// const withInstall = <T>(com: T) => {
-//     (com as SFCWithInstall<T>).install = (app: App) => {
-//         app.component((com as any).name, ( com as any ))
-//     }
-//     return com as SFCWithInstall<T>
-
-// }
-Icon.install = (app: App) => {
-    app.component(Icon.name, Icon)
+type SFCWithInstall<T> = T & Plugin
+const withInstall = <T>(com: T) => {
+    (com as SFCWithInstall<T>).install = (app: App) => {
+        app.component((com as any).name, ( com as any ))
+    }
+    return com as SFCWithInstall<T>
 }
+let IceIcon = withInstall(icon)
 export {
-    Icon
+    IceIcon
 }
-export default Icon
+export default IceIcon

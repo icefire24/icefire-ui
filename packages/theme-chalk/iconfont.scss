@@ -1,0 +1,80 @@
+$namespace:iceicon;
+@font-face {
+  font-family: "iconfont"; /* Project id 3622404 */
+  src: url('./src/font/iconfont.woff2?t=1676426285682') format('woff2'),
+       url('./src/font/iconfont.woff?t=1676426285682') format('woff'),
+       url('./src/font/iconfont.ttf?t=1676426285682') format('truetype');
+}
+
+[class^="#{$namespace}-"], [class*=" #{$namespace}-"] {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.#{$namespace}-dizhi:before {
+  content: "\e652";
+}
+
+.#{$namespace}-ganxingquzhiwei:before {
+  content: "\e62c";
+}
+
+.#{$namespace}-youxiang:before {
+  content: "\e908";
+}
+
+.#{$namespace}-icon-test:before {
+  content: "\e617";
+}
+
+.#{$namespace}-github:before {
+  content: "\e689";
+}
+
+.#{$namespace}-dianhua:before {
+  content: "\e8ad";
+}
+
+.#{$namespace}-nianling:before {
+  content: "\e7ba";
+}
+
+.#{$namespace}-worker:before {
+  content: "\e616";
+}
+
+.#{$namespace}-xiangmujingyan:before {
+  content: "\e60a";
+}
+
+.#{$namespace}-ziwojieshao:before {
+  content: "\e654";
+}
+
+.#{$namespace}-_xiangmujingyan:before {
+  content: "\e611";
+}
+
+.#{$namespace}-skill:before {
+  content: "\e604";
+}
+
+.#{$namespace}-education:before {
+  content: "\e661";
+}
+
+.#{$namespace}-qiuzhi:before {
+  content: "\e60d";
+}
+
+.#{$namespace}-work:before {
+  content: "\e683";
+}
+
+.#{$namespace}-xiaoyuan:before {
+  content: "\e67e";
+}
+
