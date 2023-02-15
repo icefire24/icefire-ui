@@ -1,10 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import thehead from "./thehead.vue";
+</script>
 
 <template>
   <div>
-    <ice-icon class="iceicon-dizhi" :size="24" color="red"
-      ><button>test</button></ice-icon
-    >
+    <ice-icon class="iceicon-dizhi" :size="24"><button>test</button></ice-icon>
+    <thehead></thehead>
   </div>
 </template>
 
