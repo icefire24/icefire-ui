@@ -1,39 +1,22 @@
 <script setup lang="ts">
-import thehead from "./thehead.vue";
+import { IceIcon } from "@icefireui/components";
 </script>
 
 <template>
-  <div>
-    <ice-icon class="iceicon-dizhi" :size="24"><button>test</button></ice-icon>
-    <thehead></thehead>
-  </div>
+  <IceIcon color="red" class="iceicon-dizhi" :size="24"></IceIcon>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
-
 .logo {
-  display: block;
-  margin: 0 auto 2rem;
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
 }
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vue:hover {
+  filter: drop-shadow(0 0 2em #42b883aa);
 }
 </style>

@@ -6,9 +6,13 @@
   "type": "module",
   "scripts": {
     "dev": "pnpm -C play dev",
-    "build":"gulp -f build/gulpfile.ts",
+    "build": "gulp -f build/gulpfile.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "workspaces": [
+    "packages/*",
+    "play"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -16,6 +20,8 @@
     "@icefireui/components": "workspace:^1.0.0",
     "@icefireui/theme-chalk": "workspace:^1.0.0",
     "@icefireui/utils": "workspace:^1.0.0",
+    "eslint": "^8.34.0",
+    "prettier": "^2.8.4",
     "sass": "^1.57.1",
     "typescript": "^4.9.4",
     "vue": "^3.2.45"

@@ -7,4 +7,4 @@ export const iconProps = {
         type: String,
     },
 }
-export type IconProps = ExtractPropTypes<typeof iconProps>
+export type iconProps = ExtractPropTypes<typeof iconProps>

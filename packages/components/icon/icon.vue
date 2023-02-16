@@ -3,7 +3,15 @@ import { defineComponent, computed } from 'vue';
 import { iconProps } from './icon';
 export default defineComponent({
   name: 'IceIcon',
-  props: iconProps,
+  props:{    size: {
+        type: Number,
+    },
+    test: {
+        type: String,
+    },
+    color: {
+        type: String,
+    },} ,
   setup(props) {
     const style = computed(() => {
       if (!props.color && !props.size) return {};
